@@ -150,3 +150,33 @@ footer {
   padding: 15px 0;
   margin-top: 50px;
 }
+
+/* Smooth Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional: staggered fade for grids (e.g., service cards) */
+.service-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.service-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
